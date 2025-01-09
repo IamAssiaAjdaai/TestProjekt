@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.hero {
+    background: rgb(110,152,237);
+    background: linear-gradient(90deg, rgba(110,152,237,1) 0%, rgba(255,128,128,1) 45%, rgba(250,169,169,1) 100%);
+  /*url(https://www.tagesspiegel.de/images/8642596/alternates/BASE_21_9_W1000/1710424395000/imago0144056000h-1.jpeg) #FFA07A;*/ /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+        }
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+        }
+
+.sectionleft{
+    width: 50%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.sectionleft h2{
+    margin-top: 15rem;
+    font-size: 2.3rem;
+}
+.sectionright{
+    width: 50%;
+    float: right;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.sectionleft p{
+    font-size: 16px;
+}
+.sectionleft button{
+    border-radius: 30px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    background: rgb(229, 105, 105);
+}
+.sectionleft button:hover{
+    background: rgba(255, 0, 0, 0.679);
+    font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+    .sectionleft, .sectionright {
+      width: 100%;
+      float: none;
+      padding: 20px;
+    }
+    .sectionleft h2 {
+      font-size: 2rem;
+    }
+    .sectionleft p {
+      font-size: 14px;
+    }
+    .sectionleft button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+      padding: 10px;
+    }
+    .sectionleft, .sectionright {
+      padding: 10px;
+    }
+    .sectionleft h2 {
+      font-size: 1.8rem;
+    }
+    .sectionleft p {
+      font-size: 12px;
+    }
+    .sectionleft button {
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      height: auto;
+      padding: 5px;
+    }
+    .sectionleft, .sectionright {
+      padding: 5px;
+    }
+    .sectionleft h2 {
+      font-size: 1.5rem;
+    }
+    .sectionleft p {
+      font-size: 10px;
+    }
+    .sectionleft button {
+      padding: 4px 8px;
+    }
+  }
