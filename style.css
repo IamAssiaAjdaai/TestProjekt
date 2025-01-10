@@ -65,12 +65,7 @@ body{
   background-color: white;
 }
 .hero {
-  background: rgb(110,152,237);
   background: linear-gradient(90deg, rgba(110,152,237,1) 0%, rgba(255,128,128,1) 45%, rgba(250,169,169,1) 100%);
-  /*url(https://www.tagesspiegel.de/images/8642596/alternates/BASE_21_9_W1000/1710424395000/imago0144056000h-1.jpeg) #FFA07A;*/ /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   color: white; 
   position: relative;
