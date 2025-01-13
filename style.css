@@ -65,6 +65,10 @@ footer ul li a {
     color: #6c757d;
 }
 
+.nav-item {
+    margin: 0 0 0 40px;
+}
+
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
